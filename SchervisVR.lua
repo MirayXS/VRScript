@@ -4,7 +4,7 @@
 -- Lavender Updo https://www.roblox.com/catalog/451220849/Lavender-Updo
 game.Players.LocalPlayer.Character["LavanderHair"].Handle:FindFirstChildOfClass("SpecialMesh"):Destroy()
 game.Players.LocalPlayer.Character["Pal Hair"].Handle:FindFirstChildOfClass("SpecialMesh"):Destroy()
-game.Players.LocalPlayer.Character["MediHood"].Handle.Transparency = 1
+game.Players.LocalPlayer.Character["UR HAT NAME HERE"].Handle.Transparency = 1
 
 
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
@@ -22,7 +22,7 @@ local settings = {}
 settings.headscale = 3 -- how big you are in vr, 3 is reccomended
 settings.forcebubblechat = true -- bubblechat or no!!11?!?!
  
-settings.headhat = "MediHood" -- ur head accessory name
+settings.headhat = "UR HAT NAME HERE" -- ur head accessory name
 settings.righthandhat = "Pal Hair" -- the accessory you will use which will be ur right hand
 settings.lefthandhat = "LavanderHair" -- the accessory you will use which will be ur left hand
  
