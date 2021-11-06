@@ -1,3 +1,34 @@
+---THIS SCRIPT USES SOME OF SKEDS VR'S SOURCE
+-- Hats Required:
+-- Pal Hair https://www.roblox.com/catalog/63690008/Pal-Hair
+-- Lavender Updo https://www.roblox.com/catalog/451220849/Lavender-Updo
+game.Players.LocalPlayer.Character["LavanderHair"].Handle:FindFirstChildOfClass("SpecialMesh"):Destroy()
+game.Players.LocalPlayer.Character["Pal Hair"].Handle:FindFirstChildOfClass("SpecialMesh"):Destroy()
+game.Players.LocalPlayer.Character["MediHood"].Handle.Transparency = 1
+
+
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+game:GetService("RunService").Heartbeat:connect(function()
+v.Velocity = Vector3.new(45,0,0)
+end)
+end
+end
+ 
+local settings = {}
+ 
+-- settings:
+ 
+settings.headscale = 3 -- how big you are in vr, 3 is reccomended
+settings.forcebubblechat = true -- bubblechat or no!!11?!?!
+ 
+settings.headhat = "MediHood" -- ur head accessory name
+settings.righthandhat = "Pal Hair" -- the accessory you will use which will be ur right hand
+settings.lefthandhat = "LavanderHair" -- the accessory you will use which will be ur left hand
+ 
+settings.righthandrotoffset = Vector3.new(0,0,0)
+settings.lefthandrotoffset = Vector3.new(0,0,0)
+------------------------------------------------
  local plr = game:GetService("Players").LocalPlayer
 local char = plr.Character
 --local backpack = plr.Backpack
@@ -155,3 +186,4 @@ if settings.forcebubblechat == true then
 		end)
 	end
 end
+print("THIS SCRIPT USES SOME OF SKEDS VR'S SOURCE")
